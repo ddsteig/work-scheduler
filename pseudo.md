@@ -17,3 +17,4 @@ Timeblocks are color coded by:
 When I click the timeblock:
     I can input text,
         I can click an icon to save text to local storage.
+        If I click it again, it will clear it from local storage.
