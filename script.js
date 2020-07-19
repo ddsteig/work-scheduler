@@ -8,6 +8,10 @@ var noteArray = [];
 // For time, starting at midnight:
 //     Create a div,
 //     Give the div a id or class,
+//        Within the div:
+//          Create label element for time,
+//          Create input element for text,
+//          Create button element for save button.
 //     Append div to html,
 // Military time format.
 
@@ -38,6 +42,10 @@ function diplayTimeBlocks() {
   }
 }
 
+// Timeblocks are color coded by:
+//    For loop that grabs the id# and data# to compare the value of the time block against current time.
+//    Conditional statement updates classes of text area based on time.
+
 function colorTimeBlock() {
   for (i = 0; i < 24; i++) {
     let blockTime = $("#hour-" + i);
@@ -54,11 +62,23 @@ function colorTimeBlock() {
   }
 }
 
-function updateTimeBlocks() {
+// Time and date posted at the top updates every 5 seconds.
+
+function updateTime() {
   $("#currentDay").text(moment().format("llll"));
-  colorTimeBlock();
   setInterval(updateTimeBlocks, 5000);
 }
+
+// Updates the color blocks every 10 mins running the conditionals.
+
+function updateTimeBlocks() {
+  colorTimeBlock();
+  setInterval(updateTimeBlocks, 10000);
+}
+
+// Grabs the data# of the clicked button and the text,
+  // Creates an object with the data,
+    // Sets object to local Storage.
 
 function saveNote() {
   let hourSelected = $(this).attr("data-click");
@@ -76,6 +96,9 @@ function saveNote() {
   localStorage.setItem("noteArray", JSON.stringify(noteArray));
 }
 
+// Checkes to see if there is local storage data on refresh,
+  // Parses data and returns the text based on the value where it was grabbed.
+
 function loadNote() {
   if (localStorage.getItem("noteArray") !== null) {
     var myNotes = JSON.parse(localStorage.getItem("noteArray"));
@@ -85,9 +108,12 @@ function loadNote() {
   }
 }
 
+// Click event to run the fucntion to save the text to local Storage.
+
 $(document).on("click", ".saveBtn", saveNote);
 
 diplayTimeBlocks();
 colorTimeBlock();
+updateTime();
 updateTimeBlocks();
 loadNote();
