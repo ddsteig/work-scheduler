@@ -16,6 +16,7 @@ var noteArray = [];
 // Military time format.
 
 function diplayTimeBlocks() {
+
   for (i = 0; i < 24; i++) {
     let timeRow = $("<div>");
     timeRow.attr("class", "row time-block");
@@ -47,6 +48,7 @@ function diplayTimeBlocks() {
 //    Conditional statement updates classes of text area based on time.
 
 function colorTimeBlock() {
+
   for (i = 0; i < 24; i++) {
     let blockTime = $("#hour-" + i);
     let dataHour = blockTime.attr("data-hour");
@@ -84,15 +86,11 @@ function saveNote() {
   
   let hourSelected = $(this).attr("data-click");
   let note = $("#timeText-" + hourSelected).val();
-
-  console.log(hourSelected);
-  console.log(note);
- 
   let noteObj = {
     note: note,
     hour: hourSelected,
   };
-  
+
   noteArray.push(noteObj);
   localStorage.setItem("noteArray", JSON.stringify(noteArray));
 
@@ -102,6 +100,7 @@ function saveNote() {
   // Parses data and returns the text based on the value where it was grabbed.
 
 function loadNote() {
+  
   if (localStorage.getItem("noteArray") !== null) {
     var myNotes = JSON.parse(localStorage.getItem("noteArray"));
     for (i = 0; i < myNotes.length; i++) {
@@ -112,8 +111,7 @@ function loadNote() {
       }
       noteArray.push(noteObj)
     }
-  }
-  
+  }  
 }
 
 // Click event to run the fucntion to save the text to local Storage.
