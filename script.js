@@ -81,19 +81,21 @@ function updateTimeBlocks() {
     // Sets object to local Storage.
 
 function saveNote() {
+  
   let hourSelected = $(this).attr("data-click");
   let note = $("#timeText-" + hourSelected).val();
 
   console.log(hourSelected);
   console.log(note);
-
+ 
   let noteObj = {
     note: note,
     hour: hourSelected,
   };
-
+  
   noteArray.push(noteObj);
   localStorage.setItem("noteArray", JSON.stringify(noteArray));
+
 }
 
 // Checkes to see if there is local storage data on refresh,
@@ -104,13 +106,20 @@ function loadNote() {
     var myNotes = JSON.parse(localStorage.getItem("noteArray"));
     for (i = 0; i < myNotes.length; i++) {
       $("#timeText-" + myNotes[i].hour).val(myNotes[i].note);
+      let noteObj = {
+        note: myNotes[i].note,
+        hour: myNotes[i].hour
+      }
+      noteArray.push(noteObj)
     }
   }
+  
 }
 
 // Click event to run the fucntion to save the text to local Storage.
 
-$(document).on("click", ".saveBtn", saveNote);
+ $(document).on("click", ".saveBtn", saveNote);
+
 
 diplayTimeBlocks();
 colorTimeBlock();
