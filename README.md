@@ -1,2 +1,3 @@
-# work-scheduler
-Work Day Scheduler
+# Word Day Scheduler
+
+ ![GitHub Logo](/images/scheduler.jpg)
