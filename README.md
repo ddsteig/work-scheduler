@@ -7,7 +7,7 @@
 
 <hr>
 
-<strong>The timeblock are created and updated via the javascript.</strong>
+<strong>The timeblocks are created and updated via the javascript.</strong>
  
 ![Time Block Create Code](/images/timeblocks.jpg)
  
