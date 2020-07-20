@@ -64,3 +64,5 @@ This app utilizes:
 * Bootstrap
 * Moment().js
 * Jquery
+* Fontawesome
+* Google Apis
