@@ -1,14 +1,14 @@
-#currentDay{
+#currentDay {
   font-weight: bold;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -25,11 +25,11 @@ textarea{
   border-bottom: 10px solid black;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
 }
@@ -37,7 +37,7 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -55,7 +55,7 @@ textarea{
 }
 
 .present {
-  background-color: rgb(93, 199, 199) ;
+  background-color: rgb(93, 199, 199);
   color: black;
   font-weight: bold;
 }
@@ -70,25 +70,36 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #06aed5;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-#topbtn{
+#topbtn {
   width: 100%;
   text-align: center;
 }
 
-#clearbutton{
+#clearbutton {
   margin: 1rem 0 1rem 0;
   height: 75px;
   width: 300px;
   text-align: center;
   border-radius: 15px;
   font-weight: bold;
+}
+
+#timeBlocks {
+  margin-bottom: 2rem;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: black;
+  margin-bottom: 2rem;
 }
