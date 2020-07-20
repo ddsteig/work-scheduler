@@ -46,6 +46,7 @@ Use setInterval to help update the time & date, and the coloring of the timebloc
 * saveNote() & loadNote()
 
 Pushes an object into an array for storing in the local storage, and also returns it so that the save text remains through page refreshing.
+Targets text by using the id and data values given to the elements.
 
 * $(document).on("click", ".saveBtn", saveNote);
 
