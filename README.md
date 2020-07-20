@@ -52,6 +52,10 @@ Pushes an object into an array for storing in the local storage, and also return
 Used for the click event on the save button.
 Utilizies the document ready function to ensure all functions are called before allowing the click.
 
+* $("#clearbutton").on("click", function()
+
+Created a button in the header that clears local storage and refreshes the page to remove all notes.
+
 <hr>
 
 ## Resources
