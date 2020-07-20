@@ -100,7 +100,7 @@ function saveNote() {
   // Parses data and returns the text based on the value where it was grabbed.
 
 function loadNote() {
-  
+
   if (localStorage.getItem("noteArray") !== null) {
     var myNotes = JSON.parse(localStorage.getItem("noteArray"));
     for (i = 0; i < myNotes.length; i++) {
