@@ -8,13 +8,13 @@
 <hr>
 
 <strong>The time blocks are colored according to past, present, and future times that are compared against the current time.</strong>
-<br>
+`<br>`
 
 ![Colored Time Blocks](/images/timecolors.jpg)
 
 <hr>
 <strong>This is the function that updates the timeblocks with color based on current time vs the timeblock time.</strong>
-<br>
+`<br>`
 
 ![Color Timeblock Code](/images/colorblocks.jpg)
 
