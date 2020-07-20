@@ -7,9 +7,15 @@
 
 <hr>
 
-<strong>The time blocks are colored according to past, present, and future times that are compared against the current time.</strong>
+<strong>The timeblock are created and updated via the javascript.</strong>
+ 
+![Time Block Create Code](/images/timeblocks.jpg)
+ 
+<hr>
+ 
+<strong>The timeblocks are colored according to past, present, and future times that are compared against the current time.</strong>
 
-![Colored Time Blocks](/images/timecolors.jpg)
+![Colored Timeblocks](/images/timecolors.jpg)
 
 <hr>
 
