@@ -25,38 +25,38 @@
 
 <hr>
 
-###Info
+## Info
 
 The app utilizes several functions and forloops.
 
-*displayTimeBlocks()
+* displayTimeBlocks()
 
 Uses a for loop to create the timeblocks. 
 It also adds classes for css.
 Id's, and data attributes are used to help target specific data for setting local storage.
 
-*colorTimeBlocks()
+* colorTimeBlocks()
 
 Uses a for loop to cycle through the timeblocks, compairing the current time with data attributes to color the timeblocks by past, present, and future.
 
-*updateTime() & upateTimeBlocks()
+* updateTime() & upateTimeBlocks()
 
 Use setInterval to help update the time & date, and the coloring of the timeblocks.
 
-*saveNote() & loadNote()
+* saveNote() & loadNote()
 
 Pushes an object into an array for storing in the local storage, and also returns it so that the save text remains through page refreshing.
 
-*$(document).on("click", ".saveBtn", saveNote);
+* $(document).on("click", ".saveBtn", saveNote);
 
 Used for the click event on the save button.
 Utilizies the document ready function to ensure all functions are called before allowing the click.
 
 <hr>
 
-###Resources
+## Resources
 
 This app utilizes:
-*Bootstrap
-*Moment().js
-*Jquery
+* Bootstrap
+* Moment().js
+* Jquery
