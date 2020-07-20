@@ -11,8 +11,8 @@ When I open the planner:
 
 Timeblocks are color coded by:
     If time is less than currentTime, the Past timeblock is Grey.
-    If time is equal to  currentTime, the Present timeblock is Green.
-    If time is greater than currentTime, the Future timeblock is Blue.
+    If time is equal to  currentTime, the Present timeblock is Teal.
+    If time is greater than currentTime, the Future timeblock is Green.
 
 When I click the timeblock:
     I can input text,

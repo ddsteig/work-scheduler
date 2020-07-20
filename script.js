@@ -116,8 +116,11 @@ function loadNote() {
 
 // Click event to run the fucntion to save the text to local Storage.
 
- $(document).on("click", ".saveBtn", saveNote);
-
+$(document).on("click", ".saveBtn", saveNote);
+$("#clearbutton").on("click", function(){
+  localStorage.clear()
+  document.location.reload()
+})
 
 diplayTimeBlocks();
 colorTimeBlock();

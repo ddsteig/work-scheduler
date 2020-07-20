@@ -78,3 +78,17 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+#topbtn{
+  width: 100%;
+  text-align: center;
+}
+
+#clearbutton{
+  margin: 1rem 0 1rem 0;
+  height: 75px;
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: bold;
+}
