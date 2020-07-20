@@ -13,6 +13,7 @@ The time blocks are colored according to past, present, and future times that ar
 
 <hr>
 This is the function that updates the timeblocks with color based on current time vs the timeblock time.
+
 ![Color Timeblock Code](/images/colorblocks.jpg)
 
 <hr>
