@@ -30,6 +30,8 @@ function diplayTimeBlocks() {
     let timeColTxt = $("<input>");
     timeColTxt.attr("class", "col-8 text");
     timeColTxt.attr("id", "timeText-" + i);
+    timeColTxt.attr("type", "text");
+    timeColTxt.attr("placeholder", "Type Memo Here");
 
     let timeColBtn = $("<button>");
     timeColBtn.attr((type = "click"));
