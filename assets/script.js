@@ -50,8 +50,7 @@ function diplayTimeBlocks() {
 function colorTimeBlock() {
 
   for (i = 0; i < 24; i++) {
-    let blockTime = $("#hour-" + i);
-    let dataHour = blockTime.attr("data-hour");
+    let dataHour = $("#hour-" + i).attr("data-hour");
     let colorBlock = $("#timeText-" + i);
 
     if (currentTime > dataHour) {
@@ -117,6 +116,9 @@ function loadNote() {
 // Click event to run the fucntion to save the text to local Storage.
 
 $(document).on("click", ".saveBtn", saveNote);
+
+// Click event to clear local storage and refresh page.
+
 $("#clearbutton").on("click", function(){
   localStorage.clear()
   document.location.reload()
