@@ -1,6 +1,6 @@
 # Word Day Scheduler
 
- ### [Head to the Scheduler here!](https://ddsteig.github.io/work-scheduler/)https://ddsteig.github.io/work-scheduler/
+ ### [Head to the Scheduler here!](https://ddsteig.github.io/work-scheduler/)
 
 <strong>A mobile responsive application, that allows you to see the date and time.</strong>
 <strong>It also allows you to enter a note and save it to a time, that will save and load via local storage.</strong>
